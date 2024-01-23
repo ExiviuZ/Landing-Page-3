@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+html {
+  height: 100vh;
+}
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  min-height: 100vh;
+  color: white;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+main {
+  background-image: url("../images/main-bg.png");
+  background-size: cover;
+  background-position-y: 60%;
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.content > * {
+  max-width: 540px;
+}
+
+.card-container {
+  margin-top: 5rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  color: rgb(216, 216, 216);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 100%, 0.25);
+}
+
+.card span {
+  font-size: 30px;
+}
+.wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.overlay {
+  width: 400px;
+  background-color: #fff;
+  position: absolute;
+  height: 400px;
+  border-radius: 9999px;
+  right: 300px;
+  mix-blend-mode: overlay;
+  filter: blur(100px);
+}
